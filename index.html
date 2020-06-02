@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Bienvenidos | Unidad 4</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/urku-ico.svg">
+    <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
+    <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
+    <link rel="stylesheet" href="assets/css/urku.css">
+  </head>
+  <body class="top-fixed">
+    <header class="ae-container-fluid ae-container-fluid--full rk-header ">
+      <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
+      <label for="mobile-menu">
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#bar"></use>
+        </svg>
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#bar"></use>
+        </svg>
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#bar"></use>
+        </svg>
+      </label>
+      <div class="ae-container-fluid rk-topbar">
+        <h1 class="rk-logo"><a href="index.html">Principios Electricos</a></h1>
+        <nav class="rk-navigation">
+          <ul class="rk-menu">
+            <li class="active rk-menu__item"><a href="index.html" class="rk-menu__link">Home</a>
+            </li>
+                </ul>
+              </nav>
+            </li>
+          </ul>
+          <form class="rk-search">
+            <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
+            <label for="urku-search">
+              <svg>
+                <use xlink:href="assets/img/symbols.svg#icon-search"></use>
+              </svg>
+            </label>
+          </form>
+        </nav>
+      </div>
+    </header>
+    <section class="ae-container-fluid rk-main">
+      <input type="radio" name="layout-ctrl" checked id="layout-base" class="layout-ctrl-input">
+      <div class="ae-container-fluid rk-layout-ctrl-cont">
+        <label for="layout-base" class="rk-layout-ctrl">
+          <svg>
+            <use xlink:href="assets/img/symbols.svg#icon-view-default"></use>
+          </svg>
+        </label>
+      </div>
+      <input type="radio" name="layout-ctrl" id="layout-grid" class="layout-ctrl-input">
+      <div class="ae-container-fluid rk-layout-ctrl-cont">
+        <label for="layout-grid" class="rk-layout-ctrl">
+          <svg>
+            <use xlink:href="assets/img/symbols.svg#icon-view-alt"></use>
+          </svg>
+        </label>
+      </div>
+      <div class="rk-layout-ctrl-mobile">
+        <svg viewBox="0 0 9 9" class="layout-mob-1">
+          <rect width="100%" height="100%" fill="currentColor"></rect>
+        </svg>
+        <svg viewBox="0 0 9 9" class="layout-mob-2">
+          <rect width="100%" height="100%" fill="currentColor"></rect>
+        </svg>
+        <svg viewBox="0 0 9 9" class="layout-mob-3">
+          <rect width="100%" height="100%" fill="currentColor"></rect>
+        </svg>
+        <svg viewBox="0 0 9 9" class="layout-mob-4">
+          <rect width="100%" height="100%" fill="currentColor"></rect>
+        </svg>
+      </div>
+     <center> <h1>Bienvenidos</h1></center><br>
+    <h2>4 UNIDAD LENGUAJES HDL</h2>
+    <p>Los lenguajes HDL permiten realizar el primer paso de la metodología del diseño descendente. 
+        Se describen en un lenguaje de alto nivel el comportamiento requerido del circuito a diseñar.
+         Esta descripción se puede hacer mediante tablas de verdad, lista de transiciones de estados, ecuaciones lógicas.</p>
+         <br>
+    <h2>4.1 DISPOSITIVOS LÓGICOS PROGRAMABLES</h2><br>
+    <h3>Dispositivos Lógicos Programables</h3>
+    <p>¿Qué es la lógica programable?
+        La lógica programable, como el nombre implica, es una familia de componentes que contienen conjuntos de elementos lógicos 
+        (AND, OR, NOT, LATCH, FLIP-FLOP) que pueden configurarse en cualquier función lógica que el usuario desee y que el componente soporte.
+        Hay varias clases de dispositivos lógicos programables: ASICs, FPGAs, PLAs, PROMs, PALs, GALs, y PLDs complejos.</p>
+        <br>
+        <!-- <img src="/assets/img/hermi2.jpg" width="200" height="180"> -->
+        <br>
+    <h2>4.1.1 TIPOS DE DISPOSITIVOS LÓGICOS PROGRAMABLES</h2><br>
+    <p>Circuitos integrados a medida.</p><br>
+        <p>Los Circuitos Integrados a Medida (Full Custom), se diseñan a petición de un cliente para que resuelvan una determinada aplicación. Conllevan un alto coste de desarrollo y 
+            su empleo sólo se justifica para volúmenes de producción muy elevados. El tiempo necesario para la construcción de un CI a medida es considerable ya que puede oscilar de unos meses a unos años.
+        </p>
+        <br>
+        <!-- <img src="/assets/img/hermi3.jpg" width="200" height="180"> -->
+        <br>
+    <h2>4.1.2 CARACTERÍSTICAS DISPOSITIVOS LÓGICOS PROGRAMABLES</h2><br>
+    <h3>Características Del Diseño Con Plds</h3><br>
+    <p>Los PLDs están situados en una zona intermedia entre los dispositivos a medida y la lógica de catálogo formada por los CI de función fija. Tienen casi todas las ventajas de los ASICs sin estar penalizados por un costo elevado para pequeñas series.
+        Además el ciclo de diseño con PLDs es mucho más rápido que los de las matrices de puertas o las células normalizadas. 
+        En determinadas aplicaciones, un PLD puede sustituir desde unos pocos hasta unas decenas de CI de función fija, mientras que los grandes ASICs pueden sustituir a cientos e incluso miles de CI.
+        En ocasiones, los PLD se utilizan para realizar prototipos que posteriormente se llevarán a un ASIC más complejo.</p><br>
+        <h2>4.1.3 FABRICANTES DISPOSITIVOS LÓGICOS PROGRAMABLES</h2>
+        <p>Altera es uno de los pioneros de la lógica programable, siguiendo líderes notables anteriores como Signetics y MMI en la introducción de PLDs. Altera desarrolla algunas características que están orientadas hacia capacidad de sistemas en chips programables (SOPC). Algunos de los ejemplos más recientes incluyen memoria embebida, procesadores embebidos, y transceptores de alta velocidad. El éxito en lanzamientos de productos de 130nm y 90nm son buenos casos de estudio. Los procesadores soft-core Nios II y Nios de Altera y los dispositivos HardCopy II y HardCopy están extendiendo el alcance de 
+            Altera en el mercado, y coloca a esta empresa en el mundo de los procesadores embebidos y ASICs estructuradas respectivamente</p>
+        <br>
+        <h2>4.1.4 PASOS PARA EL DISEÑO CON DISPOSITIVOS LÓGICOS PROGRAMABLES</h2>
+        <h3>Planificación del diseño:</h3>
+        <p>Para poder atacar un problema complejo (sistema) la mejor manera que tenemos es dividirlo. De esta manera se  pueden atacar problemas de menor complejidad y mas fáciles de analizar. Este es el camino que generalmente usamos para diseñar un sistema digital. Las decisiones que se tomen al principio para dividir el problema pueden afectar el resultado final. En algunos casos debemos volver al principio y replantear la arquitectura después de haber resuelto el problema. La experiencia y conocimientos sobre el problema, las posibles soluciones y la tecnologías disponibles ayudarán a que la decisión que se tome sea la mas acertada.
+        </p>
+    </center>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="ae-container-fluid rk-footer ">
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
+          
+          <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">2020 Principios electricos y aplicaciones digitales </span></p>
+        </div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
+          <!-- <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"> <a href="#0" class="rk-dark-color ">HeminioMata@Oficial.com </a></span></p> -->
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+  </body>
+</html>
